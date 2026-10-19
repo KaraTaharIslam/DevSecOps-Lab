@@ -13,16 +13,16 @@ jobs:
   test:
     runs-on: ubunto-latest
 
-steps:
-  - name: Checkout code
-    uses: actions/checkout@v4
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-  - name: Setup Python
-    uses: actions/setup_python@v6
-    with:
-      python-version: '3.13'
-  - name: Check Python syntax
-    run: python -m py-compile hello.py
-  - name: RUn Python script
-    run: printf 'Student\n' | python hello.py
+    - name: Setup Python
+      uses: actions/setup_python@v6
+      with:
+        python-version: '3.13'
+    - name: Check Python syntax
+      run: python -m py-compile hello.py
+    - name: RUn Python script
+      run: printf 'Student\n' | python hello.py
 
