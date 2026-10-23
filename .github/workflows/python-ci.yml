@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: '3.13'
       - name: Check Python syntax
-        run: python -m py-compile hello.py
+        run: python -m py_compile hello.py
       - name: RUn Python script
         run: printf 'Student\n' | python hello.py
 
